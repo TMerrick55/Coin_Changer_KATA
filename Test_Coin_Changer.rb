@@ -14,4 +14,10 @@ class Coin_Changer < Minitest::Test
 		results = nickel_function(cents)
 		assert_equal(7, results)
 	end
+
+	def test_98_returns_9_dimes
+		cents = 98
+		results = dime_function(cents)
+		assert_equal(9, results)
+	end
 end
