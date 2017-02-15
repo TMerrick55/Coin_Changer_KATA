@@ -27,3 +27,12 @@ class Coin_Changer < Minitest::Test
 		assert_equal(3, results)
 	end
 end
+
+class Final_Coin_Changer <Minitest::Test
+
+	def test_68_returns_correctly
+		cents = 68
+		results = combined_coin_function(cents)
+		assert_equal({:quarter => 2, :dime => 1, :nickel => 1, :penny => 3}, results)
+	end
+end

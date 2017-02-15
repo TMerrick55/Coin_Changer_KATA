@@ -57,7 +57,7 @@ def combined_coin_function(cents)
 	end
 
 	if cents && (cents >= 1)
-		first = penny_function(cents)
+		fourth = penny_function(cents)
 		coins_hash[:penny] = fourth
 	end
 	coins_hash
