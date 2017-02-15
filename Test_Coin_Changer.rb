@@ -20,4 +20,10 @@ class Coin_Changer < Minitest::Test
 		results = dime_function(cents)
 		assert_equal(9, results)
 	end
+
+	def test_99_returns_3_quarters
+		cents = 99
+		results = quarter_function(cents)
+		assert_equal(3, results)
+	end
 end
