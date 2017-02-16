@@ -2,6 +2,11 @@ require 'minitest/autorun'
 require_relative 'Coin_Changer.rb'
 
 class Coin_Changer < Minitest::Test
+
+	def test_empty_hash
+		cents = 0
+		assert_equal({}, combined_coin_function(cents))
+	end
 	
 	def test_8_returns_8_pennies
 		cents = 8
