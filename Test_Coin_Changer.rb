@@ -100,4 +100,16 @@ class Final_Coin_Changer <Minitest::Test
 		results = combined_coin_function(cents)
 		assert_equal({:dime => 2, :penny => 4}, results)
 	end
+
+	def test_2_returns_correctly
+		cents = 2
+		results = combined_coin_function(cents)
+		assert_equal({:penny => 2}, results)
+	end
+
+	def test_102_returns_correctly
+		cents = 102
+		results = combined_coin_function(cents)
+		assert_equal({:quarter => 4, :penny => 2}, results)
+	end
 end
